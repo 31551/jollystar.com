@@ -1,0 +1,46 @@
+﻿---
+layout: pages
+permalink: /news.html
+title: News - F-theta lens, Telecentric F-theta lens, Telecentric lens, Fused-sillica lens, Laser Marking, Laser Process
+keywords: F-theta lens, Telecentric F-theta lens, Telecentric lens, Fused-sillica lens, Laser Marking, Laser Process
+---   
+
+<div class="banner_s"><img src="Assets/upload/banner_a.jpg" alt=""/></div>
+<div class="scd_bg">
+	<div class="wrap scd clearfix">
+    	<div class="scd_l">
+        	<div class="s_top"><span>News</span></div>
+            <ul class="s_nav">
+            	<li><a href="/list-of-corp-news.html"><i>&nbsp;</i><span>Our News</span></a></li>
+                <li><a href="/list-of-announcement.html"><i>&nbsp;</i><span>Technical Information</span></a></li>
+                <li><a href="/list-of-industry-news.html"><i>&nbsp;</i><span>Applications</span></a></li>
+            </ul>
+            <div class="space_hx">&nbsp;</div>
+        </div>
+        <div class="scd_r">
+        	<div class="r_top">
+            	<i>&nbsp;</i>
+                <span>News<em>新闻动态</em></span>
+                <div class="pst">
+                	You are here:
+                    <a href="/">Home</a>-
+                    <a href="/news.html">News</a>
+                </div>
+            </div>
+            <div class="scd_m news">
+			    {% for post in site.categories["news"] %}
+            	<dl class="clearfix">
+                	<dd>
+                    	<div class="title"><a href="{{ post.url }}">{{ post.title }}</a></div>
+                        <div class="ctn"><a href="{{ post.url }}">{{ post.excerpt }}</a></div>
+                        <div class="time">
+                        	{{ post.tag }}
+                            <span>{{ post.date | date: "%Y-%m-%d" }}</span>
+                        </div>
+                    </dd>
+                </dl>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

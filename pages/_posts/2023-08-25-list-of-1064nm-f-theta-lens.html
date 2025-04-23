@@ -1,0 +1,72 @@
+﻿---
+layout: pages
+permalink: /list-of-1064nm-f-theta-lens.html
+category: products
+title: Products - F-theta lens, Telecentric F-theta lens, Telecentric lens, Fused-sillica lens, Laser Marking, Laser Process
+keywords: F-theta lens, Telecentric F-theta lens, Telecentric lens, Fused-sillica lens, Laser Marking, Laser Process
+---  
+    <!-- 内容 -->
+<div class="banner_s"><img src="Assets/upload/banner_d.jpg" alt=""/></div>
+<div class="scd_bg">
+	<div class="wrap scd clearfix">
+    	<div class="pro">
+        	<div class="pro_a clearfix">
+            	<span>Products</span>
+                <a href="list-of-1064nm-f-theta-lens.html">1064nmF-theta Lens</a>
+                <a href="list-of-532nm-f-theta-lens.html">532nmF-theta Lens</a>
+                <a href="list-of-355nm-f-theta-lens.html">355nmF-theta Lens</a>
+                <a href="list-of-343nm-f-theta-lens.html">343nmF-theta Lens</a>
+                <a href="list-of-fused-sillica-f-theta-lens.html">Fused SillcaF-theta Lens</a>
+                <a href="list-of-telecentric-f-theta-lens.html">Telecentric F-theta Lens</a>
+				<a href="list-of-achromatic-f-theta-lens.html">Achromatic F-theta Lens</a>
+                <a href="">Customized Lens</a>
+				<a href="">Protective Lens</a>
+                <a href="">Beam Expander</a>
+                
+            </div>
+            <div class="pro_b">
+            	<table border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <th scope="col">1064nm f-theta lens.<br/>1064nm F-theta Lens</th>
+                    <th scope="col">TYPE NO.</th>
+                    <th scope="col">Focal Length</th>
+                     <!--    	<th scope="col">Scan Angle</th>  -->
+                    <th scope="col">Square Field</th>
+                    <th scope="col">Input Beam</th>
+                    <th scope="col">Focus Size</th>
+                    <th scope="col">D1 + D2</th>
+                    <th scope="col">Interface</th>
+                    <!--    <th scope="col">Parameter Files</th>  -->
+                  </tr>
+                 {% for post in site.tags["1064nm-f-theta-lens"] %}	
+				  <tr>
+						<td align="center"> <a href="{{ post.permalink }}">{{ post.type  }}</a></td>
+						<td align="center">{{ post.typeno }}</td>
+						<td align="center">{{ post.efl}}</td>
+					 <!--    	<td align="center">{{ post.scanangle }}</td>  -->
+						<td align="center">{{ post.workarea  }}</td>
+						<td align="center">{{ post.inbeammax  }}</td>
+						<td align="center">{{ post.Encircledenergy  }}</td>
+						<td align="center">{{ post.Xmirrordistancemax  }}</td>
+						<td align="center">{{ post.Mountingthread  }}</td>
+			<!--   			<td align="center">
+						<a href="/docs/products/{{ post.type }}.zip" target="_blank"><img src="/images/dl.png"></a></p>
+						</td>
+					 -->
+				  </tr>
+				{% endfor %}				
+                </table>
+				<ul class="pro_l clearfix">
+				{% for post in site.tags["1064nm-f-theta-lens"] %}
+                	<li>
+                    	<a href="{{ post.permalink }}">
+                        	<img src="images/products/{{ post.image }}/{{ post.image }}-01.jpg" alt="{{ post.title }}" />
+                            <p>{{ post.title }}</p>
+                        </a>
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
+		</div>
+    </div>
+</div>

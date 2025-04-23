@@ -1,0 +1,61 @@
+﻿---
+layout: news-article
+title: 平场扫描镜头的性能衡量标准
+category: news
+keywords: 激光场镜， 北京卓瑞斯， 远心场镜， 激光加工， 激光精密加工
+tag: 技术资讯  # 可选项为 公司新闻，应用案例， 技术资讯
+---   
+            <div class="scd_m about">
+                <p align="center"><img src="/images/news/jingtouhengliangbiaozhun/qjf.JPG" alt="激光场镜"/></p>
+                <br/>
+            	<h3>1、平场扫描镜头的性能衡量标准：</h3>
+				<p>
+
+a、透光率，也称作光损率；透光率越高，光损率越低，激光能量的损失越小。<br>
+
+b、平场性能；测试中心区域斑点和边缘的斑点尺寸差异，差异越小性能越好！<br>
+
+c、斑点尺寸；相同型号的镜头，斑点越小越好。</p>
+                <br/>
+
+				<h3>北京卓瑞斯光电科技有限公司的场镜产品有如下优点：</h3>
+				<p>
+
+a、每面的透过率大于99.8%，镜头的总体透过率大于95%；（透光率高，光损小）<br>
+
+b、在设计范围内打标力度均匀，周边和中心区域的打标斑点差异很小；（平场性能好）<br>
+
+c、我们的镜头设计达到镜头的衍射极限，斑点特别小；（斑点尺寸小，能量集中）		</p>
+                <br/>
+				<h3>3、北京卓瑞斯光电科技有限公司可以提供的型号和打标幅面如下：</h3>		
+
+				<table border="1" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <th scope="col">场镜型号</th>
+                    <th scope="col">产品编号</th>
+                    <th scope="col">工作波长</th>
+                    <th scope="col">焦距</th>
+                    <th scope="col">扫描角度</th>
+                    <th scope="col">工作范围</th>
+                    <th scope="col">入射光斑</th>
+                    <th scope="col">聚焦光斑</th>
+                    <th scope="col">D1 + D2</th>
+                    <th scope="col">螺纹接口</th>
+                  </tr>
+                 {% for post in site.tags["激光场镜"] %}	
+				  <tr>
+						<td align="center"> <a href="{{ post.permalink }}">{{ post.type  }}</a></td>
+						<td align="center">{{ post.typeno }}</td>
+						<td align="center">{{ post.wavelength }}</td>
+						<td align="center">{{ post.efl  }}</td>
+						<td align="center">{{ post.scanangle }}</td>
+						<td align="center">{{ post.workarea  }}</td>
+						<td align="center">{{ post.inbeammax  }}</td>
+						<td align="center">{{ post.Encircledenergy  }}</td>
+						<td align="center">{{ post.Xmirrordistancemax  }}</td>
+						<td align="center">{{ post.Mountingthread  }}</td>
+				  </tr>
+				{% endfor %}				
+                </table>
+				
+            </div>
