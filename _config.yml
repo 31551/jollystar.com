@@ -1,0 +1,46 @@
+# Site
+title: 北京卓瑞斯光电科技有限公司
+
+address: 北京市平谷区平谷镇岳各庄八蜡庙路33号
+
+contact: 周经理
+
+mobile: +86-18613302256
+
+tel: +86-10-69965385
+
+whatsapp1: +12096806688
+
+email: jollystar@jollystar.com
+
+web: https://www.jollystar.cn
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+    
+# Archives
+    
+# Other
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
+# adsense: "disabled"
+# adsense-data-ad-client: "ca-pub-3412143450191416"
+# adsense-data-ad-slot: "1363087678"
+
+# Lazy Images ("enabled" or "disabled")
+lazyimages: "disabled"
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
