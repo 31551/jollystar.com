@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<title>{% if page.full_title %}{{ page.full_title }}{% else %}{% if page.title %}{{ page.title }}-{% endif %}{{ site.title }}{% endif %}</title>
+<meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
+<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<link rel="stylesheet" type="text/css" href="/Assets/css/reset.css"/>
+<script type="text/javascript" src="/Assets/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="/Assets/js/js_z.js"></script>
+<script type="text/javascript" src="/Assets/js/banner.js"></script>
+<link rel="stylesheet" type="text/css" href="/Assets/css/thems.css">
+<script src="/Assets/plugins/scrool/jquery/jquery.mousewheel.min.js"></script>
+<script src="/Assets/plugins/scrool/jquery/jquery.ba-resize.min.js"></script>
+<script src="/Assets/plugins/scrool/js/scrollbar.min.js"></script>
+<script src="/Assets/plugins/scrool/js/buttons.js"></script>
+<link rel="stylesheet" type="text/css" href="/Assets/css/responsive.css">
+<link rel="shortcut icon" href="/favicon.ico" />
+<script language="javascript">
+$(function(){
+	$('#owl-demo').owlCarousel({
+		items: 1,
+		navigation: true,
+		navigationText: ["上一个","下一个"],
+		autoPlay: true,
+		stopOnHover: true
+	}).hover(function(){
+		$('.owl-buttons').show();
+	}, function(){
+		$('.owl-buttons').hide();
+	});
+});
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0NSFP8WTNZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0NSFP8WTNZ');
+</script>
+</head>
+
+<body>
+<div class="h_bg">
+	<div class="h_top">
+    	<a href="https://www.jollystar.cn">www.jollystar.com</a>
+        <a href="tel:+86-10-69965385" class="tel">+86-10-69965385</a>
+    </div>
+</div>
+<!--头部-->
+<div class="head clearfix">
+    <div class="logo">
+    	<a href="/"><img src="/Assets/images/logo.jpg" alt="Zhuorui Optics Technology Co., Ltd"/></a>
+        <div class="h_code">
+        	<img src="/Assets/images/code.jpg" alt=""/>
+            <div class="c_m">
+            	<img src="/Assets/images/code_d.png" alt=""/>
+                <p>Keep in Touch<br>Whatsapp Business</p>
+            </div>
+        </div>
+    </div>
+    <div class="nav_m">
+        <div class="n_icon">Menu</div>
+        <ul class="nav clearfix">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About Zhuorui</a></li>
+            <li><a href="/product.html">Products</a></li>
+            <li><a href="/news.html">News&Events</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+			<li><a href="https://www.jollystar.cn">中文版</a></li>
+        </ul>
+    </div>
+</div>
+<!--头部-->
+    
+    {{ content }}
+    
+<div class="bg_b">
+	<div class="wrap f_nav clearfix">
+    	<dl class="f_navl clearfix">
+        	<dt><img src="/Assets/images/bg_2.png" alt=""/></dt>
+            <dd>
+            	<div class="f_name">Contact Us</div>
+                <h7>Zhuorui Optics Technology Co., Ltd</h7>
+				<br>
+                <p>Address: No.33, Balamiao Road, Yuegezhuang, Pinggu District, Beijing 101200, China.</p>
+                <p>Tel: +86-10-69965385</p>
+                <p>Email: info@jollystar.com</p>
+                <p>Website: https://www.jollystar.com</p>
+				<br>
+				<p><a href="https://www.facebook.com/zhuoruioptics" target="_blank"><img src="/Assets/images/icon_facebook.png"></a>&nbsp;
+				   <a href="https://twitter.com/#!/ZhuoruiOptics" target="_blank"><img src="/Assets/images/icon_twitter.png"></a>&nbsp;
+				   <a href="https://youtube.com/@Zhuorui-Optics-Technology" target="_blank"><img src="/Assets/images/icon_youtube.png"></a>&nbsp;
+				   <a href="https://wa.me/12096806688" target="_blank"><img src="/Assets/images/icon_whatsapp.png"></a></p>
+			</dd>
+        </dl>
+        <div class="line">&nbsp;</div>
+        <div class="f_navr">
+        	<p class="tt">Zhuorui Optics together with you</p>
+            <div class="f_name">Worldwide.</div>
+            <div class="f_search">
+            	<div class="s_m">
+                	<div class="s_mt">
+                    	<span>ZHUORUI Woldwide</span>
+                        <em>&nbsp;</em>
+                    </div>
+                    <ul>
+                    	<li><a href="https://www.jollystar.com">ZHUORUI Global - English </a></li>
+                        <li><a href="https://www.jollystar.cn">ZHUORUI 中国网站 - 中文版</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="wrap foot">
+	<p><a href="/about.html">About Zhuorui</a>   |  <a href="/join.html">Careers</a>  |  <a href="/contact.html">Contact Us</a>  |  <a href="/sitemap.xml">sitemap</a></p>
+    <p>版权所有：北京卓瑞斯光电科技有限公司  Copyright © 2007 - 2023  Zhuorui Optics Co., Ltd.</p>
+</div>
+</body>
+</html>
