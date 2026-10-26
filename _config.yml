@@ -1,19 +1,26 @@
-# Site
-title: 北京卓瑞斯光电科技有限公司
+# Site identity
+title: "Jollystar | Precision Laser Optics"
+description: >-
+  Manufacturer of F-theta lenses, telecentric lenses,
+  beam expanders and custom laser optics for industrial applications.
+url: "https://www.jollystar.com"
+baseurl: ""
+lang: en
 
-address: 北京市平谷区平谷镇岳各庄八蜡庙路33号
 
-contact: 周经理
+address: No.33, Balamiao Road, Yuegezhuang, Pinggu District 101200, Beijing, P.R.CHINA
+
+contact: Mr.Charles Zhou
 
 mobile: +86-18613302256
 
 tel: +86-10-69965385
 
-whatsapp1: +12096806688
+whatsapp: +86-18613302256
 
 email: jollystar@jollystar.com
 
-web: https://www.jollystar.cn
+web: https://www.jollystar.com
 
 # Plugins
 plugins:
